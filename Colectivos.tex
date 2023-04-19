@@ -1,0 +1,49 @@
+\documentclass[]{article} % Tipo de documento
+\usepackage[utf8]{inputenc} % Uso de la codificacion UTF8
+\usepackage{comment} % Incluir comentarios multilinea
+\usepackage{amssymb} % Agregar simbolos matematicos
+\usepackage{amsmath} % Agregar ecuaciones
+\usepackage[spanish, mexico]{babel} % Idioma espanol, mexico para que diga tabla y no cuadro
+\usepackage[colorlinks]{hyperref} % Hypervinculo
+\usepackage{multirow} % Combinar filas en tablas
+\usepackage{float} % Poder mover los flotantes
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx} % Agregar imagenes
+\graphicspath{{img/}}
+
+\begin{document}
+    \textbf{Colectivos}
+
+    \begin{table}[H]
+        \centering
+            \caption{Desde casa}
+            \begin{tabular}{|c|c|p{5.45cm}|}
+                \hline
+                \textbf{Desde} & \textbf{Hasta} & \textbf{Colectivos} \\
+                \hline
+                \multirow[c]{5}{*}{\textbf{Casa}} & Famaf &\textbf{\color{orange}16, 18, 19, \color{red}22, 45, \color{orange}66, 67, \color{red}71, 73, \color{blue}81}\\
+                \cline{2-3}
+                 & Baterias & \textbf{\color{orange}13, 18, 19, \color{red}22, 29, 41, 43, 45, 52, \color{orange}67, \color{red}71, 73, \color{blue}81, 83}\\
+                \cline{2-3}
+                 & Sophi & \textbf{\color{orange}64, 66}\\
+                \hline
+            \end{tabular}
+    \end{table}
+    
+    \begin{table}[H]
+        \centering
+            \caption{Desde Famaf}
+            \begin{tabular}{|c|c|p{5cm}|}
+                \hline
+                \textbf{Desde} & \textbf{Hasta} & \textbf{Colectivos} \\
+                \hline
+                \multirow[c]{3}{*}{\textbf{Famaf}} & Casa & \textbf{\color{orange}16, \color{red}45, \color{orange}66}\\
+                \cline{2-3}
+                 & Chacabuco & \textbf{\color{orange}18, 19, \color{red}20, 22, \color{blue}32, \color{orange}67, \color{blue}81}\\
+                \cline{2-3}
+                 & Sophi & \textbf{\color{orange}66}\\
+                \hline
+            \end{tabular}
+    \end{table}
+
+\end{document}

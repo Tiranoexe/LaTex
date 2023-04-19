@@ -1,0 +1,365 @@
+\documentclass[]{article} % Tipo de documento
+\usepackage[utf8]{inputenc} % Uso de la codificacion UTF8
+\usepackage{comment} % Incluir comentarios multilinea
+\usepackage{amssymb} % Agregar simbolos matematicos
+\usepackage{amsmath} % Agregar ecuaciones
+\usepackage[spanish, mexico]{babel} % Idioma espanol, mexico para que diga tabla y no cuadro
+\usepackage[colorlinks]{hyperref} % Hypervinculo
+\usepackage{multirow} % Combinar filas en tablas
+\usepackage{float} % Poder mover los flotantes
+\usepackage{graphicx} % Agregar imagenes
+\graphicspath{{img/}}
+
+\begin{comment}
+    comentario 
+    comentario 
+    aaaa
+    parece que no se pueden agregar este tipo de comentarios en medio del documento
+\end{comment}
+
+\title{First document} % Titulo
+\author{Exequiel Olivera \thanks{Tiranoexe}} % Autor
+\date{\today} % Fecha
+
+\begin{document}
+
+
+    \begin{titlepage}
+        \maketitle
+    \end{titlepage}
+
+    \begin{abstract}
+        Este es un parrafo simple al comienzo el documento. Una breve introduccion al tema principal.
+    \end{abstract}
+    
+        En este documento. algunos paquetes y parametros adicionales. fueron agregados. Hay un paquete de codificacion y parametros de tamano de fuente
+
+        Esta linea comenzara un segundo parrafo. Y yo puedo romper \\ las lineas \\ y controlar en una nueva linea
+
+        Algunos de los \textbf{grandes} descubrimientos en \underline{ciencia} fueron realizados por \textbf{\textit{accidente}}
+
+        Algunos de los mejores descubrimientos en ciencia fueron realizados por \emph{accidente}\\
+        %it y emph son para poner cursivas, pero emph lo hace a pesar de que se haya usado otro cambio en la fuente del texto
+        
+
+        \pagebreak
+        \textbf{Listas}
+        \begin{itemize}
+            \item Las entradas individuales se indican con un punto negro, una llamada vineta.
+            \item   El texto en las entradas puede ser de cualquier longitud.
+        \end{itemize}
+
+        \begin{enumerate}
+            \item Las etiquetas consisten en numeros secuenciales.
+            \item Los numeros comienzan en 1 con cada llamada al entorno de nenumeracion.
+        \end{enumerate}
+
+        \underline{Listas anidadas enumeradas}
+        \begin{enumerate}
+            \item Item de primer nivel
+            \item Item de primer nivel
+            \begin{enumerate}
+                \item Item de segundo nivel
+                \item Item de segundo nivel
+                \begin{enumerate}
+                    \item Item de tercer nivel
+                    \item Item de tercer nivel
+                    \begin{enumerate}
+                        \item Item de cuarto nivel
+                        \item Item de cuarto nivel 
+                    \end{enumerate}
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
+
+        \underline{Listas anidadas sin enumerar}
+        \begin{itemize}
+            \item Item de primer nivel
+            \begin{itemize}
+                \item Item de segundo nivel
+                \begin{itemize}
+                    \item Item de tercer nivel
+                    \begin{itemize}
+                        \item Item de cuarto nivel
+                    \end{itemize}
+                \end{itemize}
+            \end{itemize}
+        \end{itemize}
+
+        \pagebreak
+        \textbf{Expresiones matematicas}\\
+
+        El conocido teorema de Pitagoras \(x^2 + y^2 = z^2\) demostro ser invalido para otros exponentes. Lo que significa que la siguiente ecuacion no tiene soluciones enteras: 
+
+        \[ x^n + y^n = z^n\]
+
+        % Se usa parentesis para la ecuacion en linea con el texto
+        % Se usa corchete para la ecuacion en una nueva linea
+
+        \underline{En linea con el texto}
+        \begin{itemize}
+            \item En fisica, se establece la equivalencia masa-energia por la ecuacion $E=mc^2$, descubierta en 1905 por Albert Einstein.
+
+            \item En fisica, se establece la equivalencia masa-energia por la ecuacion \(E=mc^2\), descubierta en 1905 por Albert Einstein.
+
+            \item En fisica, se establece la equivalencia masa-energia por la ecuacion \begin{math}E=mc^2\end{math}, descubierta en 1905 por Albert Einstein.
+        \end{itemize}
+
+       \underline{Simbolos matematicos}
+       \begin{itemize}
+        \item Letras griegas: $\alpha, \beta, \gamma, \rho, \sigma, \delta, \epsilon, etc.$
+
+        \item Operadores binarios: $\times, \otimes, \oplus, \cup, \cap, etc.$ 
+
+        \item Operadores de relaciones: <, >, $\subset, \supset, \subseteq, \supseteq, etc.$
+        
+        \item Otros: $\int, \oint, \sum, \prod, etc.$\\
+        \end{itemize}
+
+        \pagebreak
+        \textbf{Ecuaciones}
+
+        \begin{equation} \label{eq1}
+            \begin{split}
+            A & = \frac{\pi r^2}{2} \\
+             & = \frac{1}{2} \pi r^2
+            \end{split}
+        \end{equation}
+
+        % Debe ser incluida dentro del ambiente equation
+        % Se puede usar equation* si no se quiere enumerar
+        % Split para dividir la ecuacion en partes, que van a ser alineadas automaticamente
+        % El ampersand (&) sirve para establecer los puntos de respecto a los cuales se alinearan verticalmente las ecuaciones
+
+        \underline{Ecuaciones de una sola linea}
+        \begin{equation} \label{eu_eqn}
+            e^{\pi i} - 1 = 0
+        \end{equation}
+
+        La hermosa ecuacion \ref{eu_eqn} is known as the Euler equation.\\
+
+        % \label es para etiquetar y luego poder referirse a ella o su numeracion con \ref
+        
+        \underbar{Ecuaciones de varias lineas}
+        \begin{multline*}
+            p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\
+            -12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3 - 48x4^3y
+        \end{multline*}
+
+        % Se usa cuando la ecuacion no entra en una sola linea
+
+        \underbar{Division y alineacion de ecuaciones}
+        \begin{align*} 
+            2x - 5y &=  8 \\ 
+            3x + 9y &=  -12
+        \end{align*}
+
+        % Se usa \align si hay varias ecuaciones que deben alinearse verticalmente
+        % Se toma a los operadores <, > y = como puntos de alineacion vertical
+
+        \begin{align*}
+            x&=y           &  w &=z              &  a&=b+c\\
+            2x&=-y         &  3w&=\frac{1}{2}z   &  a&=b\\
+            -4 + 5x&=2+y   &  w+2&=-1+w          &  ab&=cb
+            \end{align*}
+
+        % Se vuelve a usar el & para determinar los puntos de alineacion de las ecuaciones, en este caso, formando 3 columnas 
+
+        \underbar{Agrupar y centrar ecuaciones}
+        \begin{gather*} 
+            2x - 5y =  8 \\ 
+            3x^2 + 9y =  3a + c
+        \end{gather*}
+        
+        % Se usa para mostrar una serie de ecuaciones consecutivas, centradas y sin alinear.
+
+        \underbar{Cambiar el estilo y alineacion default}
+
+        Pasar de
+        \[
+             a_0+{1\over a_1+
+                  {1\over a_2+
+                    {1 \over a_3 + 
+                       {1 \over a_4}}}}
+        \]
+
+        a
+
+        \[
+            a_0+{1\over\displaystyle a_1+
+                {1\over\displaystyle a_2+
+                    {1 \over\displaystyle a_3 + 
+                    {1 \over\displaystyle a_4}}}}
+            \]
+        
+        % \textstyle aplica el estilo usado para la tipografia matematica en los parrafos
+        % \displaystyle: aplica el estilo utilizado para la tipografía matemática en líneas por sí mismas
+        % \scriptstyle: aplica el estilo usado para subíndices o superíndices
+        % \scriptscriptstyle: aplica el estilo usado para subíndices o superíndices de segundo orden
+
+        \underbar{Coeficiente binomial o numeros combinatorios}
+
+        El coeficiente binomial, \(\binom{n}{k}\), se define por la expresion:
+        \[
+            \binom{n}{k} = \frac{n!}{k!(n-k)!}
+        \]
+
+        % Como el \frac, el \binom divide la expresion y las acomoda verticalmente
+
+        \underline{Estilo de fracciones con texto}
+
+        \[\frac{\text{numerador}}{\text{denominador}}\]
+
+        % Usando \verb o \text{...}
+        % Sin usar \verb o \text el resultado es este: 
+
+        \[\frac{numerator}{denominator}\]
+
+        \pagebreak
+        \textbf{Tablas}\\
+
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            Super & Transporte & Facultad & Extra \\
+            \hline
+            5400 & 800 & 1400 & 4000 \\
+            \hline
+            TOTAL & 11600 \\
+            
+        \end{tabular}
+  
+        % Despues del tabular se pone c(center), l(left), r(right) o p(parragraph){con una distancia en cm}
+
+        \begin{table}[h] % La h para que la tabla aparezca justo aqui, y no en top o bottom
+            \centering
+            \caption{Leyenda de la tabla.}
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                Super & Transporte & Facultad & Extra \\
+                \hline
+                5400 & 800 & 1400 & 4000 \\
+                \hline
+                TOTAL & 11600 \\
+            \end{tabular}
+            \label{tab:datos}
+        \end{table}
+
+        \begin{table}[h] % La h para que la tabla aparezca justo aqui, y no en top o bottom
+            \centering
+            \caption{Horario de cursado.}
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                Lunes & Martes & Miercoles & Jueves & Viernes \\
+                \hline
+                - & Discreta & - & Discreta & - \\
+                \hline
+                Laboratorio & Algoritmos & Analisis & Algoritmos & Analisis \\
+            \end{tabular}
+            \label{tab:datos2}
+        \end{table}
+        
+        % Para "arreglar" que en la tabla 1 hay columnas faltantes, vamos a combinar columnas
+
+        \begin{table}[h]
+            \centering
+            \caption{Tabla con columnas combinadas.}
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                Super & Transporte & Facultad & Extra \\
+                \hline
+                5400 & 800 & 1400 & 4000 \\
+                \hline
+                TOTAL & \multicolumn{3}{|c|}{11600} \\ 
+
+                % El 3 indica la cantidad de columnas agrupadas en la celda
+                % El |c| indica que el texto debe estar centrado y con lineas verticales
+                % La ultima llave indica el valor de la columna
+                
+            \end{tabular}
+            \label{tab:datos3}
+        \end{table}
+
+        \begin{table}[H] %  'H' y no 'h' ya que sin el paquete float la tabla se iba a una nueva hoja
+            \centering
+            \caption{Tabla con filas combinadas.}
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                Super & Transporte & Facultad & Extra \\
+                \hline
+                5400 & 800 & \multirow[c]{2}{*}{1400} & 4000 \\
+                \cline{1-2}
+                \cline{4-4}
+                3400 & 600 &  & 2000 \\
+                \hline
+                TOTAL & \multicolumn{3}{|c|}{11600} \\
+
+                % El c indica que el texto debe estar centrado
+                % El 2 indica la cantidad de filas agrupadas en la celda
+                % El * indica que tenga el ancho de toda la columna
+                % La ultima llave indica el valor de la columna, se puede poner un ancho especifico con width
+                % Para sacar la linea que queda en medio de las filas, al \hline lo reemplazo por \cline{1-2} y \cline{4-4}
+                % Indicando que la linea debe ir desde la columna 1 a la 2 y tambien en la 4, siendo la 3 en la que las filas se combinan
+                
+            \end{tabular}
+            \label{tab:datos4}
+        \end{table}
+
+        Ver tablas: 
+            Tabla \Ref{tab:datos}, tabla \Ref{tab:datos2}, tabla \Ref{tab:datos3}, tabla \Ref{tab:datos4} 
+            % Referencia a la tabla con \label e hypervinculo
+         
+        \pagebreak
+        \textbf{Imagenes}
+
+        % Primero agregar el paquete graphicx
+        % Crear una carpeta nueva para guardar las imagenes (img)
+        % Incluir una linea de codigo que indique al compilador la ruta de acceso a la carpeta de las imagenes ( \graphicspath{{img/}} )
+        % Agregar el comando \includegraphics{NOMBREDEIMAGEN}
+
+        \includegraphics{dd70b1b87d300d20fcfaf566f13de977.jpg}
+
+        \underline{Ajustar el tamano de la imagen}
+
+        % Usando [scale]
+        % Con [scale=0.5] se reduce el tamano de la imagen a la mitad
+        \includegraphics[scale=0.5]{dd70b1b87d300d20fcfaf566f13de977.jpg}
+
+        % Tambien se puede indicar el ancho y alto especificos usando [width, height]
+        % Se pueden poner los 2 valores, o solo 1 de los 2, para mantener la proporcion de la imagen
+        \includegraphics[width=5cm, height=7cm]{dd70b1b87d300d20fcfaf566f13de977.jpg}
+
+        % Para ajustar la imagen al ancho del texto se usa [width=\textwidth]
+        \includegraphics[width=\textwidth]{dd70b1b87d300d20fcfaf566f13de977.jpg}\\
+
+        \underline{Posicionamiento de la imagen}
+
+        % Incluir entorno figure 
+        \begin{figure} 
+            \includegraphics[width=\textwidth]{dd70b1b87d300d20fcfaf566f13de977.jpg}
+        \end{figure}
+
+        % Usando [t] (top)e n el begin, la foto se pone al comienzo de la pagina
+        % Usando [b] (bottom) en el begin, la foto se pone al final de la pagina, o a la siguiente pagina
+        % Usando [h] (here) en el begin, la foto se pone justo donde aparece el entorno de la pagina
+\end{document}
+
+
+\begin{comment}
+    Cambiar la numeracion: \renewcommand{\labelenumi}{\(TIPODENUMERACION){enumi}}
+    Despues del labelnum y el enum va en romano el nivel, ej enumii (2do nivel)
+    
+    Tipos de numeracion:
+    \alph: Letra minuscula (a, b, c...)
+    \ALPH: Letra mayuscula (A, B, C...)
+    \arabic: Numero arabigo (1, 2 ,3...)
+    \roman: Numero romano en minuscula (i, ii, iii...)
+    \Roman: Numero romano en mayuscula (I, II, III...)
+
+    Cambiar el simbolo en itemize: \renewcommand*{\laberlitemi}{$\TIPODESIMBOLO$}
+    Despues del laberlitem tambien va el nivel en romano
+    
+    Tipos de simbolos:
+    $\blacksquare$: cuadrado negro
+    $\square$: cuadrado vacio
+
+\end{comment}
