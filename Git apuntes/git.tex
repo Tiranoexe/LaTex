@@ -1,4 +1,20 @@
- \begin{center}
+\documentclass[]{article} % Tipo de documento
+\usepackage[utf8]{inputenc} % Uso de la codificacion UTF8
+\usepackage{comment} % Incluir comentarios multilinea
+\usepackage{amssymb} % Agregar simbolos matematicos
+\usepackage{amsmath} % Agregar ecuaciones
+\usepackage[spanish, mexico]{babel} % Idioma espanol, mexico para que diga tabla y no cuadro
+\usepackage[colorlinks]{hyperref} % Hypervinculo
+\usepackage{multirow} % Combinar filas en tablas
+\usepackage{float} % Poder mover los flotantes
+\usepackage{graphicx} % Agregar imagenes
+\graphicspath{{img/}}
+
+\begin{document}
+
+
+
+\begin{center}
   
 \textbf{Cambiar nombre de usuario en git:}
   \$ git config --global user.name "Tiranoexe"
@@ -91,3 +107,5 @@ Por defecto, uno siempre se encuentra en la rama \textbf{Master} en donde estan 
 
 En caso de encontrar un bug en la version actual de la \textbf{master}, debes crear una rama especial, \textbf{Bugfixing} o mas conocida como \textbf{Hotfix}. Luego de eliminar los bugs y realizar cambios en la rama Hotfix, para volver a la rama Master, se realiza un \textbf{Merge}, creando una nueva version dentro de la Master. Tambien se puede hacer un Merge entre una version de la rama Development y la rama Hotfix para crear una nueva version de la Master.
 Se debe tener en cuenta en el momento de hacer un Merge, de que no haya un conflicto en el que algunos archivos se rompan, o que, siguiendo con el ejemplo, algun cambio realizando en \textbf{Bugfixing} rompa un cambio en \textbf{Development} 
+
+\end{document}
