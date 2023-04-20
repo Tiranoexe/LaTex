@@ -64,7 +64,7 @@
 
 	\textbf{Comparar cambios de una version con otra a eleccion}
 	\$ git diff (numero del commit) (numero del commit con el que se quiere comparar)
-	A estos numeros se los saca al hacer git -log file.html-
+	A estos numeros, que se llaman \textit{Hash}, se los saca al hacer git log file.html
 	La primera deberia ser la version original o la mas vieja, para que los cambios tengan sentido.
 	La segunda es la version nueva o una mas reciente que la primera, asi se nota bien si algo fue agregado o eliminado.
 
@@ -84,13 +84,18 @@ En un directorio en donde estan los archivos del proyecto, por ejemplo, el direc
 
 Al entrar por consola en el archivo index.html y escribimos el comando \textbf{git init} pasan 2 cosas:
 Se crea un area en memoria RAM llamada \textit{Staging}, un area completamente desconectada que es donde se van agregando los cambios
-Se crea un \textit{Repositorio}, la carpeta /.git/, en donde se encuentran todos los cambios al final del proyecto.
+Se crea un \textit{Repositorio Local}, la carpeta /.git/, en donde se encuentran todos los cambios al final del proyecto.
 
-Una vez realizados los cambios al archivo, se lo agrega al mismo a la \textit{Staging Area} usando el comando \underbar{Git Add} index.html. En este momento el archivo queda a la espera de ser agregado en el \textit{Repositorio}, mientras se pueden agregar otros archivos o se puede remover este archivo usando el comando \underbar{Git rm}.
+Una vez realizados los cambios al archivo, se lo agrega al mismo a la \textit{Staging Area} usando el comando \underbar{Git Add} index.html. En este momento el archivo queda a la espera de ser agregado en el \textit{Repositorio Local}, mientras se pueden agregar otros archivos o se puede remover este archivo usando el comando \underbar{Git rm}.
 Usando el comando \underbar{Git commit -m "mensaje indicando los cambios en el commit"} el archivo se mueve al \textit{Repositorio}, llamado \textit{Master}, en donde se encuentran todos los cambios realizados.
 
+Para enviar los archivos y cambios realizados hacia un \textit{Repositorio Remoto} en un servidor en la nube, como \textbf{Github}, se debe usar \underbar{git push}
+Desde el \textit{Repositorio Remoto}, en este caso \textbf{Github}, usando \underbar{git clone url} podemos traer los datos hacia un Repositorio Local
+Desde el Repositorio Remoto, usando \underbar{git fetch} puedo traer una copia de un archivo hacia mi Repositorio Local y para que pueda llevarlo hacia mi Directorio de trabajo, debo realizar un Merge. Para ahorrar estos 2 comandos (fetch y merge) puedo simplemente utilizar \underbar{git pull} para copiar al repositorio local la base de datos de cambios y copio al directorio de trabajo, asi siempre tengo una compia actualizada de los ultimos cambios realizados en el repositorio.
+
 \textbf{Estados del archivo}
-Antes de utilizar el \underbar{Git Add}, el archivo esta sin rastrear, \textit{Untracked},luego del Add, el archivo entra al estado \textit{Tracked} para luego irse al \textit{Staging}. Al usar \underbar{Git Commit -m} los cambios pasan de estar trackeados en Staging a estar trackeados en el \textit{Repositorio}, y aqui es donde se le da a cada cambio los indicadores del commit (la serie de numeros y letras que identifica a cada cambio en el archivo visto en \underbar{Git Log})
+Antes de utilizar el \underbar{Git Add}, el archivo esta sin rastrear, \textit{Untracked}, dentro del directorio de trabajo, luego del Add, el archivo entra al estado \textit{Tracked} para luego irse al \textit{Staging}. Si luego de un tiempo no se hace nada con los archivos en Staging, o si se reinicia la PC, los mismos desaparecen por el \textit{Garbage Collector}.
+Al usar \underbar{Git Commit -m} los cambios pasan de estar trackeados en Staging a estar trackeados en el \textit{Repositorio}, y aqui es donde se le da a cada cambio los indicadores del commit (la serie de numeros y letras que identifica a cada cambio en el archivo visto en \underbar{Git Log})
 
 Desde la rama \textit{Master}, puedo usar "\underbar{git checkout} (numero de commit) file.html" para traer los cambios que desee hacia mi carpeta.
 En caso de hacer un commit luego de esto, se borraran todos los cambios posteriores a la version de commit actual.
@@ -104,5 +109,22 @@ Por defecto, uno siempre se encuentra en la rama \textbf{Master} en donde estan 
 
 En caso de encontrar un bug en la version actual de la \textbf{master}, debes crear una rama especial, \textbf{Bugfixing} o mas conocida como \textbf{Hotfix}. Luego de eliminar los bugs y realizar cambios en la rama Hotfix, para volver a la rama Master, se realiza un \textbf{Merge}, creando una nueva version dentro de la Master. Tambien se puede hacer un Merge entre una version de la rama Development y la rama Hotfix para crear una nueva version de la Master.
 Se debe tener en cuenta en el momento de hacer un Merge, de que no haya un conflicto en el que algunos archivos se rompan, o que, siguiendo con el ejemplo, algun cambio realizando en \textbf{Bugfixing} rompa un cambio en \textbf{Development}
+
+\pagebreak
+\textbf{Ramas}\\
+Para crear una nueva rama se usa \underbar{git branch NuevaRama}
+usando \underbar{git show} vemos que el \textit{HEAD} apunta al \textit{Master} y tambien a la \textit{NuevaRama}\\
+Para moverme hacia la nueva rama debo usar \underbar{git checkout NuevaRama}\\ 
+Un \underbar{git status} muestra ya no estamos en la Master, sino en la nueva rama. Realizamos los cambios que querramos hacer en el archivo y luego usamos \underbar{git add} y \underbar{git commit -m}, o para ahorrarnos un paso, podemos usar \underbar{git commit -am ""}. Es necesario commitear los cambios antes de cada cambio de rama, o se pueden perder los datos\\ 
+Si usamos \underbar{git checkout master} volvemos a la rama principal y el archivo vuelve a mostrarse sin los anteriores cambios
+
+\textbf{Fusion de ramas con Merge}\\ 
+Primero debo poner el \textbf{HEAD} en \textit{Master} y uso \underbar{git merge NuevaRama}. Cabe destacar que un Merge es un Commit, por lo que tambien debe llevar un mensaje, en caso de que se abra VIM, ponemos el mensaje y para salir de ahi: Escape + Shift + Z + Z.
+Luego ya quedan fusionadas las ramas, todo dentro de la Master. Realizamos el commit y guardamos todos los cambios.
+
+\textbf{Conflicto en el Merge}\\
+Puede ocurrir si 2 o mas personas cambian la misma parte del codigo por cosas diferentes y realizan un Merge entre estos archivos con cambios en el mismo lado.
+La terminal dice que arregles los conflictos y luego vuelvas a hacer commit. El mismo VS Code te pregunta si deseas mantener los cambios del Master o de la otra rama, para luego hacer el commit.
+
 
 \end{document}
