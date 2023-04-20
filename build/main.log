@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.27)  19 APR 2023 01:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.27)  20 APR 2023 15:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -265,6 +265,8 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
+) (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) Excluding 'comment' comment. (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
@@ -275,26 +277,26 @@ LaTeX Info: Redefining \% on input line 19.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -302,7 +304,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 29.
  (d:\Users\Exequiel\Desktop\LaTex\build\main.out) (d:\Users\Exequiel\Desktop\LaTex\build\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -326,17 +328,17 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Exequiel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
@@ -344,29 +346,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46         \textbf
+l.51         \textbf
                     {Listas} [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 180.
+(amsmath)                 on input line 185.
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
@@ -374,30 +376,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312         \textbf
+l.317         \textbf
                      {Imagenes}
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312         \textbf
+l.317         \textbf
                      {Imagenes}
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312         \textbf
+l.317         \textbf
                      {Imagenes}
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312         \textbf
+l.317         \textbf
                      {Imagenes}]
 <img//dd70b1b87d300d20fcfaf566f13de977.jpg, id=72, 494.84875pt x 702.625pt>
 File: img//dd70b1b87d300d20fcfaf566f13de977.jpg Graphic file (type jpg)
 <use img//dd70b1b87d300d20fcfaf566f13de977.jpg>
-Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 319.
+Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 324.
 (pdftex.def)             Requested size: 494.84755pt x 702.62328pt.
 
-Overfull \hbox (164.84755pt too wide) in paragraph at lines 319--320
+Overfull \hbox (164.84755pt too wide) in paragraph at lines 324--325
 [][] 
  []
 
@@ -407,31 +409,31 @@ Overfull \vbox (152.62328pt too high) has occurred while \output is active []
  [8 <./img//dd70b1b87d300d20fcfaf566f13de977.jpg>]
 File: img//dd70b1b87d300d20fcfaf566f13de977.jpg Graphic file (type jpg)
 <use img//dd70b1b87d300d20fcfaf566f13de977.jpg>
-Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 325.
+Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 330.
 (pdftex.def)             Requested size: 247.42377pt x 351.31163pt.
 File: img//dd70b1b87d300d20fcfaf566f13de977.jpg Graphic file (type jpg)
 <use img//dd70b1b87d300d20fcfaf566f13de977.jpg>
-Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 329.
+Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 334.
 (pdftex.def)             Requested size: 142.26413pt x 199.16736pt.
  [9]
 File: img//dd70b1b87d300d20fcfaf566f13de977.jpg Graphic file (type jpg)
 <use img//dd70b1b87d300d20fcfaf566f13de977.jpg>
-Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 332.
+Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 337.
 (pdftex.def)             Requested size: 345.0pt x 489.86145pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 332--333
+Overfull \hbox (15.0pt too wide) in paragraph at lines 337--338
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
 [10]
 File: img//dd70b1b87d300d20fcfaf566f13de977.jpg Graphic file (type jpg)
 <use img//dd70b1b87d300d20fcfaf566f13de977.jpg>
-Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 338.
+Package pdftex.def Info: img//dd70b1b87d300d20fcfaf566f13de977.jpg  used on input line 343.
 (pdftex.def)             Requested size: 345.0pt x 489.86145pt.
  [11] [12] (d:\Users\Exequiel\Desktop\LaTex\build\main.aux
 LaTeX Info: Redefining \. on input line 19.
@@ -439,17 +441,21 @@ LaTeX Info: Redefining \% on input line 19.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 16 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 10999 strings out of 476334
- 176100 string characters out of 5786555
+ 11048 strings out of 476334
+ 177226 string characters out of 5786555
  1863382 words of memory out of 5000000
- 31241 multiletter control sequences out of 15000+600000
+ 31286 multiletter control sequences out of 15000+600000
  520885 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,76p,324b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,76p,324b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Exequiel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on d:\Users\Exequiel\Desktop\LaTex\build\main.pdf (13 pages, 261507 bytes).
+Output written on d:\Users\Exequiel\Desktop\LaTex\build\main.pdf (13 pages, 261214 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)

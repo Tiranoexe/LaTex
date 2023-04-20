@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1681879721 "d:/Users/Exequiel/Desktop/LaTex/main.tex" "build/main.pdf" "main" 1681879722 0
-  "C:/Users/Exequiel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1680483001 82507 a9eef8696c92627b87e9975edea03b2a ""
+["pdflatex"] 1682014790 "d:/Users/Exequiel/Desktop/LaTex/main.tex" "build/main.pdf" "main" 1682014791 0
+  "C:/Users/Exequiel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1682014499 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Exequiel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1679875733 11548 62dd7a148a5a78bb5962f782c213825b ""
   "C:/Users/Exequiel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1679893378 23177790 83f62183f0e7c46ca76fc3efdf9ed9b1 ""
   "C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -108,12 +108,13 @@
   "C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/tex/latex/multirow/multirow.sty" 1615976118 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
+  "C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "build/main.aux" 1681879722 1535 8e678cb48cc10a43d7a0ad5514507590 "pdflatex"
-  "build/main.out" 1681879722 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "d:/Users/Exequiel/Desktop/LaTex/main.tex" 1680455603 14414 c87a42e0e5111f99d7484f76b3eb5d3e ""
+  "build/main.aux" 1682014791 1535 8e678cb48cc10a43d7a0ad5514507590 "pdflatex"
+  "build/main.out" 1682014791 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "d:/Users/Exequiel/Desktop/LaTex/main.tex" 1682014789 14582 3bbaf9eb457a460816f6bd7414fff418 ""
   "img//dd70b1b87d300d20fcfaf566f13de977.jpg" 1677664824 38812 43eb055686a202f662f866300fed984e ""
-  "main.tex" 1680455603 14414 c87a42e0e5111f99d7484f76b3eb5d3e ""
+  "main.tex" 1682014789 14582 3bbaf9eb457a460816f6bd7414fff418 ""
   (generated)
   "build/main.aux"
   "build/main.log"
