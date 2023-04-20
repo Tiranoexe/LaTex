@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.27)  19 APR 2023 23:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.27)  20 APR 2023 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,16 +326,26 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (C:\Users\Exequiel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Exequiel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4] (d:\Users\Exequiel\Desktop\LaTex\Git apuntes\build\git.aux
+{C:/Users/Exequiel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
+
+ []
+
+[4] (d:\Users\Exequiel\Desktop\LaTex\Git apuntes\build\git.aux
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 )
@@ -343,17 +353,17 @@ Package rerunfilecheck Info: File `git.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10945 strings out of 476334
- 175529 string characters out of 5786555
- 1864382 words of memory out of 5000000
- 31215 multiletter control sequences out of 15000+600000
- 514975 words of font info for 43 fonts, out of 8000000 for 9000
+ 10956 strings out of 476334
+ 175607 string characters out of 5786555
+ 1862382 words of memory out of 5000000
+ 31212 multiletter control sequences out of 15000+600000
+ 515580 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,76p,563b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Exequiel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "d:\Users\Exequiel\Desktop\LaTex\Git apuntes\build\git.pdf" (4 pages, 91927 bytes).
+ 75i,6n,76p,561b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Exequiel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Exequiel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "d:\Users\Exequiel\Desktop\LaTex\Git apuntes\build\git.pdf" (4 pages, 96188 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
